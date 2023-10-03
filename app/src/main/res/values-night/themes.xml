@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.AlbertsonsCodingChallenge" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/your_primary_color</item>
+        <item name="colorPrimaryVariant">@color/your_primary_variant_color</item>
+        <item name="colorOnPrimary">@color/your_text_color_on_primary</item>
+        <item name="colorSecondary">@color/your_secondary_color</item>
+        <item name="colorSecondaryVariant">@color/your_secondary_variant_color</item>
+        <item name="colorOnSecondary">@color/your_text_color_on_secondary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

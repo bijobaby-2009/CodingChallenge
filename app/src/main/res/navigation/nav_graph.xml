@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productNameFragment">
+
+    <fragment
+        android:id="@+id/productNameFragment"
+        android:name="com.example.albertsonscodingchallenge.ProductNameFragment"
+        android:label="Product Name Fragment"
+        tools:layout="@layout/fragment_product_name">
+        <action
+            android:id="@+id/action_productNameFragment_to_productListFragment"
+            app:destination="@id/productListFragment" >
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.albertsonscodingchallenge.ProductListFragment"
+        android:label="{productName}"
+        tools:layout="@layout/fragment_product_list" >
+        <argument
+            android:name="productName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
